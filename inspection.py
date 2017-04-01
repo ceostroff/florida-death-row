@@ -49,7 +49,7 @@ def restaurants():
 def restaurant(id):
     id, name, address, zip, date, result = get_restaurantdata(INSPECTIONS, id)
     # pass the data for the selected book to the template
-    return render_template('inspection.html', name=name, adddress=address, zip=zip, date=date, result=result)
+    return render_template('inspection.html', name=name, address=address, zip=zip, date=date, result=result)
 
 if __name__ == '__main__':
     app.run(debug=True)
