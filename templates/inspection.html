@@ -11,8 +11,6 @@
 <body>
 <div id="container">
 
-<!-- title, author and year come from winners.py -->
-
 <h1>{{ name }}</h1>
 
 <p>Address: {{ address }}</p>
@@ -22,11 +20,6 @@
 <p>Date: {{ date }}</p>
     
 <p>Result: {{ result }}</p>
-    
-<!-- note the correct way to make an href in Flask!
-     for a relative link to route - 
-     def awards():
-     -->
 
 <p><a href="{{ url_for('restaurants') }}">Return to list</a></p>
 

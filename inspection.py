@@ -3,17 +3,8 @@ from inspections import INSPECTIONS
 
 
 app = Flask(__name__)
-#Bootstrap(app)
-# this turns file-serving to static, using Bootstrap files installed in env
-# instead of using a CDN
-#app.config['BOOTSTRAP_SERVE_LOCAL'] = True
-# for WSGI
-# application = app
 
-
-# define two functions to be used by the routes
-
-# retrieve all the titles from the dataset and put them into a list
+#get all of the IDs and names and append them to the list names
 def get_names(source):
     names = []
     for row in source:
@@ -22,7 +13,7 @@ def get_names(source):
         names.append([id, name])
     return names
 
-# find the row that matches the title in the URL, retrieve author and year
+# get the information for each ID
 def get_restaurantdata(source, id):
     for row in source:
         if id == str( row["ID"] ):
@@ -34,21 +25,20 @@ def get_restaurantdata(source, id):
             result = row["Result"]
             return id, name, address, zip, date, result
 
-
+#set the homepage and the /restaurants.html to run the function to get information using the python dictionary INSPECTIONS
 @app.route('/')
 @app.route('/restaurants.html')
 def restaurants():
     names = get_names(INSPECTIONS)
-    # pass the sorted list of titles to the template
     return render_template('restaurants.html', pairs=names)
 
 
 
-
+#make a path for the /restaurant with each restaurant id and show the information for each restaurant with each ID
 @app.route('/restaurant/<id>')
 def restaurant(id):
     id, name, address, zip, date, result = get_restaurantdata(INSPECTIONS, id)
-    # pass the data for the selected book to the template
+   
     return render_template('inspection.html', name=name, address=address, zip=zip, date=date, result=result)
 
 if __name__ == '__main__':

@@ -11,19 +11,11 @@
 <body>
 <div id="container">
 
-<h1>Gainesville Health Inspections</h1>
+<h1>Gainesville Health Inspections Results</h1>
 
-<p>This is a list of Gainesville health inspection reports.</p>
+<p>This is a list of recent Gainesville health inspection reports. Click on your favorite restaurant/organization to see how it fared.</p>
 
-<!--  render a list of elements with a for-loop
-      title comes from winners.py
-      Note style for route, def book(title):
-      (it is tricky! Quotes around 'book' - no quotes for title -
-      second title means the one that was passed in - so really this
-      is arg = variable )
-      If the title had no spaces, we would not need |replace(" ", "_")
-      but we must handle the spaces, or Apache server chokes
-    -->
+
 
 <ul>
 {% for pair in pairs %}
