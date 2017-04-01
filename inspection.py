@@ -3,7 +3,6 @@ from inspections import INSPECTIONS
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '14uff!eumps&w00ze!s'
 #Bootstrap(app)
 # this turns file-serving to static, using Bootstrap files installed in env
 # instead of using a CDN
@@ -28,8 +27,8 @@ def get_restaurantdata(source, id):
     for row in source:
         if id == str( row["ID"] ):
             # decode handles accented characters
-            name = row["Name"]
-            address = row["Address"]
+            name = row["Name"] 
+            address = str (row["Address"] )
             zip = row["Zip"]
             date = row["Date"]
             result = row["Result"]

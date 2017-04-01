@@ -1,5 +1,5 @@
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 100%;
     color: #000;
     background: #00008B;
@@ -8,49 +8,49 @@ body {
 }
 
 #container {
-    margin: 2em auto;
-    width: 740px;
-    padding: 2em 4em;
+    margin: 6em auto;
+    width: 80%;
+    padding: 6em 3em;
     background: #add8e6;
     box-sizing: border-box;
 }
 
 h1 {
-    font-family: 'Droid Serif', serif;
-    font-size: 3em;
+    font-family: 'Pavanam', sans-serif;
+    font-size: 2.5em;
     margin: 0;
 }
 
 p, li {
-    font-size: 1.4em;
+    font-size: 1em;
 }
 
 /* links */
 
 a {
-    color: #1484bc;
+    color: #0000EE;
     text-decoration: none;
 }
 
 a:hover {
-    color: #407189;
+    color: #551A8B;
     text-decoration: underline;
 }
 
 
 /* media queries */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     body {
-        background: #f1f7dc;
+        background: #00008B;
     }
     #container {
-        margin: 0;
+        margin: 5em auto;
         width: 100%;
-        padding: 2em;
+        padding: 3em;
     }
     h1 {
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
 }
