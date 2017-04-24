@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
-    <title> Inspections </title>
+    <title> Inmates </title>
 <link href="https://fonts.googleapis.com/css?family=Pavanam|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/color.css') }}">
 </head>
@@ -11,20 +11,21 @@
 <body>
 <div id="container">
 
-<h1>Gainesville Health Inspections Results</h1>
+<h1>Florida's Death Row Inmates</h1>
 
-<p>This is a list of recent Gainesville health inspection reports. Click on your favorite restaurant/organization to see how it fared.</p>
+<p>This is a list of Florida's Death Row inmates. Caitlin Ostroff makes poor life choices.</p>
 
 
-
-<ul>
 {% for pair in pairs %}
 
-        <li><a href="{{ url_for('restaurant', id=pair[0]) }}">{{ pair[1] }}</a></li>
-
+    <div class="inmateList">
+        <div><a href="{{ url_for('inmate', id=pair[0]) }}">  <img src="{{ url_for('static', filename='mugshots/' + photo) }}" width="150" height="200"/> </div>
+<p >{{ pair[1] }}</p>
+   
+</div>
 
 {% endfor %}
-</ul>
+
 
 
 </div> <!-- close container -->

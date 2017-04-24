@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title> Inmate Detail Page for {{ name }} </title>
+<link href="https://fonts.googleapis.com/css?family=Pavanam|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/color.css') }}">
+</head>
+
+<body>
+<div id="container">
+<img src="{{ url_for('static', filename='mugshots/' + photo) }}" width="150" height="200"/>
+
+<p>Name: {{ name }}</p>
+
+<p>Race: {{ race }}</p>
+
+<p>Sex: {{ sex }}</p>
+
+<p>Date of Birth: {{ dob }}</p>
+    
+<p>Entry: {{ entry }}</p>
+    
+<p>Facility: {{ facility }}</p>
+    
+<p>Custody: {{ custody }}</p>
+    
+
+<p><a href="{{ url_for('inmates') }}">Return to list</a></p>
+
+
+</div> <!-- close container -->
+
+</body>
+</html>

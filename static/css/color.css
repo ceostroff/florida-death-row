@@ -21,6 +21,10 @@ h1 {
     margin: 0;
 }
 
+.inmateList{
+    display: inline-block;
+}
+
 p, li {
     font-size: 1em;
     margin: 1em;
