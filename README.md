@@ -14,7 +14,7 @@ A few reasons:
 
 With that said, I had hoped to make this app filterable. I will likely still try and do this in the next few days to show death row inmates by race, county of crime committed and time on death row. 
 
-
+Oh, and GitHub decided not to work for me (and a few other people), so, please ignore the inspection files. I had to upload my files to an old repository, make a new repository through github.com and clone it. I tried deleting those files but Murphy's law. <a href="https://gist.github.com/ceostroff/6c36b949b2a608fb56a44f40703d9c84">Here</a> is a link to my gist of scraping files I used for getting the urls of the images to download and the death row inmates' information. 
 
 
 
