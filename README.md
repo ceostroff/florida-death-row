@@ -9,7 +9,8 @@ Why would I switch from a non-scraping Access project to a scraping project?
 A few reasons: 
 <ul>
 <li>I will complain endlessly about scraping, but the truth is I love it. As I never got into Hogwarts, it's the closest thing to magic I've seen.</li>
-<li>I like doing data stories, but to truly analyze ever discreprancy in the state's sentencing would have been a massive undertaking for a few weeks and between school and work, it wasn't feasible. The last thing I wanted was to produce was a half-finished project.</li>
+<li>I like doing data stories, but to truly analyze every discreprancy in the state's sentencing would have been a massive undertaking for a few weeks and between school and work, it wasn't feasible. The last thing I wanted was to produce was a half-finished project.</li>
+<li>This went hand-in-hand with my last <a href="https://github.com/ceostroff/inmates">project</a> scraping information on inmates from several DOC jails. I wanted to take those skills and build upon what I learned from that, creating something more than a CSV file.</li>
 </ul>
 
 With that said, I had hoped to make this app filterable. I will likely still try and do this in the next few days to show death row inmates by race, county of crime committed and time on death row. 
